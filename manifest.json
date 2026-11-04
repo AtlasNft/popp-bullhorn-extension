@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Popp for Bullhorn (reference)",
+  "version": "0.1.0",
+  "description": "Reference extension: opens Popp for the current Bullhorn vacancy in a drawer.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.bullhornstaffing.com/*"],
+      "js": ["content.js"],
+      "all_frames": false,
+      "world": "MAIN"
+    }
+  ]
+}
